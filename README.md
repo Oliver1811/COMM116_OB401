@@ -17,10 +17,10 @@ pip install -r requirements.txt
 
 **Verify setup:**
 ```bash
-python verify_setup.py  # Downloads model and checks dependencies
+python verify_setup.py  # Checks dependencies
 ```
 
-## Usage
+## Usage (Qwen2-VL-2B-Instruct model (~2.5 GB) downloads automatically from HuggingFace on first run)
 
 ```bash
 # Run evaluation (agent + baseline)
