@@ -5,6 +5,7 @@ Usage
 -----
   python run_eval.py --data dev.jsonl --out outputs/dev_run
   python run_eval.py --data dev.jsonl --out outputs/dev_run --max-samples 20
+  python run_eval.py --data dev.jsonl --out outputs/dev_run --sample-index 5
   python run_eval.py --data dev.jsonl --out outputs/dev_run --agent-only -v
 
 Outputs (written to <out>/)
@@ -197,6 +198,7 @@ def evaluate(
     output_dir: str,
     *,
     max_samples: int | None = None,
+    sample_index: int | None = None,
     seed: int = 42,
     run_agent: bool = True,
     run_baseline: bool = True,
@@ -221,7 +223,12 @@ def evaluate(
     logger.info("Loading dataset: %s", data_path_obj)
     samples = load_jsonl(str(data_path_obj))
 
-    if max_samples is not None:
+    if sample_index is not None:
+        if sample_index < 0 or sample_index >= len(samples):
+            raise ValueError(f"Sample index {sample_index} out of range [0, {len(samples)-1}]")
+        samples = [samples[sample_index]]
+        logger.info("Running single sample at index %d", sample_index)
+    elif max_samples is not None:
         samples = samples[:max_samples]
 
     n = len(samples)
@@ -451,6 +458,8 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument("--out", default="outputs/eval", help="Output directory")
     p.add_argument("--max-samples", type=int, default=None, metavar="N",
                    help="Limit evaluation to the first N samples")
+    p.add_argument("--sample-index", type=int, default=None, metavar="INDEX",
+                   help="Run only a specific sample by index (0-based)")
     p.add_argument("--seed", type=int, default=42, help="Random seed")
     p.add_argument("--agent-only", action="store_true",
                    help="Skip the baseline, only run the agent")
@@ -475,6 +484,7 @@ def main() -> None:
         data_path=args.data,
         output_dir=args.out,
         max_samples=args.max_samples,
+        sample_index=args.sample_index,
         seed=args.seed,
         run_agent=not args.baseline_only,
         run_baseline=not args.agent_only,
