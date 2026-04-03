@@ -1,0 +1,50 @@
+{"id": "dev_000", "image": "data/images/dev_000.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "5"}
+{"id": "dev_001", "image": "data/images/dev_001.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "10"}
+{"id": "dev_002", "image": "data/images/dev_002.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "10"}
+{"id": "dev_003", "image": "data/images/dev_003.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "7"}
+{"id": "dev_004", "image": "data/images/dev_004.png", "question": "How many purple squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "0"}
+{"id": "dev_005", "image": "data/images/dev_005.png", "question": "Among the squares, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "blue"}
+{"id": "dev_006", "image": "data/images/dev_006.png", "question": "How many green triangles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_007", "image": "data/images/dev_007.png", "question": "What percentage of the image is covered by the green rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "20"}
+{"id": "dev_008", "image": "data/images/dev_008.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "78"}
+{"id": "dev_009", "image": "data/images/dev_009.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "81"}
+{"id": "dev_010", "image": "data/images/dev_010.png", "question": "How many red circles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "2"}
+{"id": "dev_011", "image": "data/images/dev_011.png", "question": "How many purple triangles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "0"}
+{"id": "dev_012", "image": "data/images/dev_012.png", "question": "Among the squares, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "green"}
+{"id": "dev_013", "image": "data/images/dev_013.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "23"}
+{"id": "dev_014", "image": "data/images/dev_014.png", "question": "How many green squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "0"}
+{"id": "dev_015", "image": "data/images/dev_015.png", "question": "How many blue triangles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_016", "image": "data/images/dev_016.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "8"}
+{"id": "dev_017", "image": "data/images/dev_017.png", "question": "How many blue squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_018", "image": "data/images/dev_018.png", "question": "How many green squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_019", "image": "data/images/dev_019.png", "question": "How many green circles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_020", "image": "data/images/dev_020.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "10"}
+{"id": "dev_021", "image": "data/images/dev_021.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "9"}
+{"id": "dev_022", "image": "data/images/dev_022.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "purple"}
+{"id": "dev_023", "image": "data/images/dev_023.png", "question": "What percentage of the image is covered by the red rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "40"}
+{"id": "dev_024", "image": "data/images/dev_024.png", "question": "How many green squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_025", "image": "data/images/dev_025.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "10"}
+{"id": "dev_026", "image": "data/images/dev_026.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "10"}
+{"id": "dev_027", "image": "data/images/dev_027.png", "question": "What percentage of the image is covered by the red rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "35"}
+{"id": "dev_028", "image": "data/images/dev_028.png", "question": "How many blue circles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_029", "image": "data/images/dev_029.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "56"}
+{"id": "dev_030", "image": "data/images/dev_030.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "35"}
+{"id": "dev_031", "image": "data/images/dev_031.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "blue"}
+{"id": "dev_032", "image": "data/images/dev_032.png", "question": "How many purple squares are there? Answer with an integer.", "task_type": "count_shapes", "answer": "1"}
+{"id": "dev_033", "image": "data/images/dev_033.png", "question": "How many orange circles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "0"}
+{"id": "dev_034", "image": "data/images/dev_034.png", "question": "What percentage of the image is covered by the blue rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "10"}
+{"id": "dev_035", "image": "data/images/dev_035.png", "question": "What percentage of the image is covered by the red rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "30"}
+{"id": "dev_036", "image": "data/images/dev_036.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "66"}
+{"id": "dev_037", "image": "data/images/dev_037.png", "question": "What percentage of the image is covered by the purple rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "15"}
+{"id": "dev_038", "image": "data/images/dev_038.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "green"}
+{"id": "dev_039", "image": "data/images/dev_039.png", "question": "What percentage of the image is covered by the purple rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "15"}
+{"id": "dev_040", "image": "data/images/dev_040.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "9"}
+{"id": "dev_041", "image": "data/images/dev_041.png", "question": "How many orange circles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "0"}
+{"id": "dev_042", "image": "data/images/dev_042.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle", "answer": "31"}
+{"id": "dev_043", "image": "data/images/dev_043.png", "question": "Among the triangles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "red"}
+{"id": "dev_044", "image": "data/images/dev_044.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "6"}
+{"id": "dev_045", "image": "data/images/dev_045.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color", "answer": "green"}
+{"id": "dev_046", "image": "data/images/dev_046.png", "question": "What percentage of the image is covered by the red rectangle? Answer as an integer 0-100.", "task_type": "region_fraction", "answer": "30"}
+{"id": "dev_047", "image": "data/images/dev_047.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "7"}
+{"id": "dev_048", "image": "data/images/dev_048.png", "question": "How many blue triangles are there? Answer with an integer.", "task_type": "count_shapes", "answer": "4"}
+{"id": "dev_049", "image": "data/images/dev_049.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max", "answer": "8"}

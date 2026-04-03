@@ -1,0 +1,20 @@
+{"id": "test_000", "image": "data/images/test_000.png", "question": "How many purple circles are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_001", "image": "data/images/test_001.png", "question": "How many green triangles are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_002", "image": "data/images/test_002.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max"}
+{"id": "test_003", "image": "data/images/test_003.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle"}
+{"id": "test_004", "image": "data/images/test_004.png", "question": "Among the squares, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color"}
+{"id": "test_005", "image": "data/images/test_005.png", "question": "What percentage of the image is covered by the purple rectangle? Answer as an integer 0-100.", "task_type": "region_fraction"}
+{"id": "test_006", "image": "data/images/test_006.png", "question": "How many purple squares are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_007", "image": "data/images/test_007.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max"}
+{"id": "test_008", "image": "data/images/test_008.png", "question": "How many purple triangles are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_009", "image": "data/images/test_009.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color"}
+{"id": "test_010", "image": "data/images/test_010.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle"}
+{"id": "test_011", "image": "data/images/test_011.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color"}
+{"id": "test_012", "image": "data/images/test_012.png", "question": "How many blue squares are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_013", "image": "data/images/test_013.png", "question": "How many purple triangles are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_014", "image": "data/images/test_014.png", "question": "What is the acute angle between the two black lines, in degrees? Round to the nearest integer.", "task_type": "line_angle"}
+{"id": "test_015", "image": "data/images/test_015.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max"}
+{"id": "test_016", "image": "data/images/test_016.png", "question": "How many green squares are there? Answer with an integer.", "task_type": "count_shapes"}
+{"id": "test_017", "image": "data/images/test_017.png", "question": "Among the circles, which color occurs most often? Answer with one word from: red, green, blue, purple.", "task_type": "most_common_color"}
+{"id": "test_018", "image": "data/images/test_018.png", "question": "What is the value of the tallest bar? Answer with an integer.", "task_type": "bar_chart_max"}
+{"id": "test_019", "image": "data/images/test_019.png", "question": "How many red triangles are there? Answer with an integer.", "task_type": "count_shapes"}

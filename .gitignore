@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model weights and cache
+.cache/
+*.bin
+*.safetensors
+*.gguf
+
+# Outputs (generated at runtime)
+outputs/
+Results_Dev/
+
+# Memory profiling outputs
+memory_test.json
+memory_test.png
+memory_agent_test.json
+memory_agent_test.png
+memory_eval.json
+memory_eval.png
+memory_profile.json
+memory_profile.png
+memory_summary.txt
+
+# Diagram outputs
+agent_simple.png
+agent_simple.pdf
+baseline_simple.png
+baseline_simple.pdf
+architecture_diagram.png
+architecture_diagram.pdf
+
+# macOS
+.DS_Store
+
+# Jupyter notebooks and checkpoints
+*.ipynb
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
