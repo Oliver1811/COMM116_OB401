@@ -5,21 +5,12 @@ AI agent that answers visual questions by generating and executing Python code.
 
 ## Setup
 
-**Using pip:**
 ```bash
-git clone https://github.com/Oliver1811/COMM116.git
-cd COMM116
+git clone https://github.com/Oliver1811/COMM116_OB401.git
+cd COMM116_OB401
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-**Using conda:**
-```bash
-git clone https://github.com/Oliver1811/COMM116.git
-cd COMM116
-conda env create -f environment.yml
-conda activate vision-agent
 ```
 
 **Note:** The Qwen2-VL-2B-Instruct model (~2.5 GB) downloads automatically from HuggingFace on first run. Internet connection required for initial setup only. Once downloaded, the agent operates fully offline (no online search or external APIs used during task solving).
