@@ -41,7 +41,7 @@ python run_eval.py --data dev.jsonl --out outputs/test --max-samples 3
 
 ## Key Files
 
-- `agent2.py` — Router-based agent with task-specific code generation
+- `agent.py` — Router-based agent with task-specific code generation
 - `baseline.py` — Single-pass VQA baseline
 - `sandbox.py` — Restricted Python execution environment
 - `model_loader.py` — Vision model loader (Qwen2-VL-2B)

@@ -1,7 +1,7 @@
 """
-agent2.py — Router-based vision agent with dynamic tool specialisation.
+agent.py — Router-based vision agent with dynamic tool specialisation.
 
-Extends the pipeline from agent.py with:
+Features:
 
   1. TaskFamily classification — five task families detected by regex from the
      question text (no extra model call needed for simple formulaic questions).
@@ -1263,7 +1263,7 @@ def _validate_code(code: str) -> str | None:
 def _validate_code_semantics(code: str) -> str | None:
     """Return None if code passes semantic checks, or a planner-facing error string.
 
-    agent2-specific: `def` is COMPLETELY BANNED in all generated code.
+    Strict rule: `def` is COMPLETELY BANNED in all generated code.
     The generator must write flat procedural code only.
     """
     # ----- 1. def banned entirely -----

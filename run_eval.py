@@ -467,8 +467,8 @@ def _build_parser() -> argparse.ArgumentParser:
                    help="Skip the agent, only run the baseline")
     p.add_argument("--verbose", "-v", action="store_true",
                    help="Enable DEBUG-level logging")
-    p.add_argument("--agent", default="agent2", choices=["agent", "agent2"],
-                   help="Agent module to use (default: agent2)")
+    p.add_argument("--agent", default="agent", choices=["agent"],
+                   help="Agent module to use (default: agent)")
     return p
 
 
