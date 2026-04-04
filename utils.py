@@ -107,9 +107,8 @@ def resolve_image_path(raw: str, jsonl_dir: Path | None = None) -> str:
     Strategy (in order):
       1. Exact path as provided.
       2. Relative to the directory containing the JSONL file.
-      3. Strip a leading ``data/`` segment (matches this project's layout where
-         JSONL stores ``data/images/X.png`` but images live in ``images/``).
-      4. Bare filename looked up in ``images/``.
+      3. Strip a leading ``data/`` segment (fallback for legacy paths).
+      4. Bare filename looked up in ``data/images/``.
     """
     candidates: list[Path] = []
 
@@ -127,8 +126,8 @@ def resolve_image_path(raw: str, jsonl_dir: Path | None = None) -> str:
         if jsonl_dir is not None:
             candidates.append(jsonl_dir / stripped)
 
-    # Bare filename in images/
-    candidates.append(Path("images") / p.name)
+    # Bare filename in data/images/
+    candidates.append(Path("data/images") / p.name)
 
     for candidate in candidates:
         if candidate.exists():
