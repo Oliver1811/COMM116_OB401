@@ -18,7 +18,7 @@ Features:
        execution-time checks.
   5. Extended _agent_result_is_valid for all five task families.
 
-Public API (drop-in replacement for agent.py):
+Public API:
     solve(image_path, question) -> str
     hybrid_solve(image_path, question) -> dict
     get_last_run_stats() -> dict
@@ -45,7 +45,7 @@ from utils import setup_logger
 logger = setup_logger(__name__)
 
 # ---------------------------------------------------------------------------
-# Hard limits (same as agent.py)
+# Hard limits agent.py
 # ---------------------------------------------------------------------------
 
 MAX_STEPS: int = 5
@@ -60,7 +60,7 @@ MAX_TOOL_RETRIES: int = 2
 
 class Stage(Enum):
     OBSERVE  = "OBSERVE"
-    ROUTE    = "ROUTE"      # NEW: lightweight classification, no image re-encoded
+    ROUTE    = "ROUTE"      
     PLAN     = "PLAN"
     GENERATE = "GENERATE"
     EXECUTE  = "EXECUTE"
@@ -155,7 +155,7 @@ _last_run_stats: dict[str, Any] = {
 }
 
 # ---------------------------------------------------------------------------
-# Image pre-processing (identical to agent.py)
+# Image pre-processing (agent.py)
 # ---------------------------------------------------------------------------
 
 def _prepare_image(image_path: str) -> str:
@@ -341,7 +341,7 @@ def _parse_router_output(text: str) -> dict:
     return meta
 
 # ---------------------------------------------------------------------------
-# Helper functions (identical to agent.py)
+# Helper functions
 # ---------------------------------------------------------------------------
 
 def _is_most_common_colour_question(question: str) -> bool:
@@ -1016,7 +1016,7 @@ def _build_task_hints(question: str, task_family: TaskFamily, route_meta: dict) 
     return ""  # FALLBACK — no specific hints
 
 # ---------------------------------------------------------------------------
-# Reflection prompt (identical to agent.py, minor extension for new families)
+# Reflection prompt
 # ---------------------------------------------------------------------------
 
 _REFLECT_ERROR_TYPES = (
@@ -1124,7 +1124,7 @@ def _build_reflection_prompt(state: "AgentState", question: str) -> str:
     )
 
 # ---------------------------------------------------------------------------
-# Response parsers (identical to agent.py)
+# Response parsers
 # ---------------------------------------------------------------------------
 
 def _parse_generation(text: str) -> dict[str, Any]:
@@ -1446,7 +1446,7 @@ def _check_sandbox_violations(code: str, attempt: int = 1) -> str | None:
     return None
 
 # ---------------------------------------------------------------------------
-# Utility helpers (identical to agent.py)
+# Utility helpers
 # ---------------------------------------------------------------------------
 
 def _strip_fa_prefix(text: str) -> str:
@@ -1750,14 +1750,14 @@ def solve(image_path: str, question: str, baseline_fallback: str | None = None) 
                 logger.info("  [EXECUTE] direct FINAL_ANSWER (colour): %s", state.final_answer)
                 break
 
-            # Legacy: counting questions that did not match task_family route
+            # Fallback: counting questions not classified by task_family route
             if _is_counting_question(question) and tool_result and re.fullmatch(r"-?\d+", tool_result):
                 state.final_answer = tool_result
                 state.last_stdout  = stdout
                 state.last_error   = None
                 state.push_history()
                 state.advance(Stage.DONE)
-                logger.info("  [EXECUTE] direct FINAL_ANSWER (count legacy): %s", state.final_answer)
+                logger.info("  [EXECUTE] direct FINAL_ANSWER (count fallback): %s", state.final_answer)
                 break
 
             state.last_stdout = stdout
@@ -1899,7 +1899,7 @@ def _agent_result_is_valid(stats: dict[str, Any], question: str) -> bool:
     if family == TaskFamily.MOST_COMMON_COLOUR:
         return final.lower() in {"red", "green", "blue", "purple"}
 
-    # Legacy checks for questions not classified by new families
+    # Fallback checks for unclassified questions
     if _is_counting_question(question) or _CHART_RE.search(question):
         return bool(re.fullmatch(r"\d+", final))
     if _is_most_common_colour_question(question):
